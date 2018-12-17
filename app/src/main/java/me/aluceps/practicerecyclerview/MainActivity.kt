@@ -9,6 +9,8 @@ import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Section
 import com.xwray.groupie.ViewHolder
 import me.aluceps.practicerecyclerview.databinding.ActivityMainBinding
+import me.aluceps.practicerecyclerview.item.ItemHeaderViewHolder
+import me.aluceps.practicerecyclerview.item.ItemNormalViewHolder
 
 class MainActivity : AppCompatActivity() {
 
