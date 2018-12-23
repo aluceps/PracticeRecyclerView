@@ -13,7 +13,6 @@ class ItemHeaderViewHolder(id: Long) : BindableItem<ItemHeaderBinding>(id) {
 
     override fun bind(viewBinding: ItemHeaderBinding, position: Int) {
         viewBinding.viewModel = viewModel
-        viewBinding.executePendingBindings()
     }
 
     fun setText(value: String) {

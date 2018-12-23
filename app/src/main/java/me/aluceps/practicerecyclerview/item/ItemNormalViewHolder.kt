@@ -13,7 +13,6 @@ class ItemNormalViewHolder(id: Long) : BindableItem<ItemNormalBinding>(id) {
 
     override fun bind(viewBinding: ItemNormalBinding, position: Int) {
         viewBinding.viewModel = viewModel
-        viewBinding.executePendingBindings()
     }
 
     fun setText(value: String) {
