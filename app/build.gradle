@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
@@ -25,4 +26,14 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+
+    implementation 'com.airbnb.android:epoxy:3.1.0'
+    implementation 'com.airbnb.android:epoxy-databinding:3.1.0'
+    kapt 'com.airbnb.android:epoxy-processor:3.1.0'
+}
+
+kapt {
+    correctErrorTypes = true
 }
