@@ -3,6 +3,7 @@ package me.aluceps.practicerecyclerview
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import me.aluceps.practicerecyclerview.databinding.ActivityMainBinding
 
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.run {
             adapter = controller.adapter
             layoutManager = LinearLayoutManager(context)
+            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         }
         controller.setData(ItemData("header1", listOf(
                 "item: 1",
